@@ -38,12 +38,6 @@ jobs:
           cache: "npm"
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          # Automatically inject basePath in your Next.js config file and disable
-          # server side image optimization (unoptimized: true) to support static export.
-          #
-          # You can remove this line if you have already done it manually in your next.config.ts
-          static_site_generator: next
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
